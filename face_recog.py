@@ -6,8 +6,8 @@ known_face_encoding = []
 known_face_name = []
 
 # opencv module reading image.
-person1_image = cv2.imread("shahrukh.jpg")
-person2_image =cv2.imread("salman.jpg")
+person1_image = cv2.imread("salman.jpg")
+person2_image =cv2.imread("shahrukh.jpg")
 
 # converting BGR image to RGB.
 rgb_image1 = cv2.cvtColor(person1_image, cv2.COLOR_BGR2RGB)
@@ -21,8 +21,8 @@ person2_encoding = fr.face_encodings(rgb_image2)[0]
 known_face_encoding.append(person1_encoding)
 known_face_encoding.append(person2_encoding)
 
-known_face_name.append("shahrukh khan")
-known_face_name.append("salman khan")
+known_face_name.append("salman")
+known_face_name.append("shahrukh")
 
 #initialize webcam
 video_capture = cv2.VideoCapture(0)
